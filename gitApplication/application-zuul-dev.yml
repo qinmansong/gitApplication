@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: zuul
+
+zuul:
+  routes:
+    template-privider:
+      path:  /api/provider/**
+      serviceId: provider
+    template-consumer:
+      path:  /api/consumer/**
+      serviceId: consumer
